@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+<head>
+	<!-- Meta data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<title>Townsville Automotive Group</title>
+</head>
+
+<!-- Body -->
+<body>
+	<!-- NavBar -->
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Townsville Automotive Group</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="car_details.html">Car Details</a>
+						</li>
+					</ul>
+					<form class="d-flex flex-grow-1 bd-highlight">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-light" type="submit">Search</button>
+					</form>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="about_us.html">About Us</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb pt-2">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Car Details</li>
+			</ol>
+		</nav>
+
+		<!-- Car Details Section -->
+		<div class="row" style="background-color: #eeeeee;">
+			<div id="carouselExampleControls" class="carousel slide mt-2" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/camaro_1.jpg" class="d-block w-100" alt="Camaro Exterior">
+					</div>
+					<div class="carousel-item">
+						<img src="img/camaro_2.jpg" class="d-block w-100" alt="Camaro Interior">
+					</div>
+					<div class="carousel-item">
+						<img src="img/camaro_3.jpg" class="d-block w-100" alt="Camaro Rear View">
+					</div>
+					<div class="carousel-item">
+						<img src="img/camaro_4.jpg" class="d-block w-100" alt="Camaro Side View">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-12 m-4">
+				<h1> 2021 Chevrolet Camaro</h1>
+				<h3>$86,990</h3>
+				<br>
+				<div><b>Brand: </b>Chevrolet</div>
+				<div><b>Year: </b>2021</div>
+				<div><b>Odomoter: </b>17km</div>
+				<div><b>Contact Person: </b><a href="about_us.html">Jolene Banner</a></div>
+				<p>
+					<ul>
+						<li> 6.2L V8 DI engine</li>
+						<li> Manual or automatic transmission</li>
+						<li> 8 kilometre per litre fuel economy</li>
+						<li> Coupe or convertible options available</li>
+						<li> Forward collision warning</li>
+						<li> 5 year warranty available</li>
+					</ul>
+				</p>
+			</div>
+
+			<!-- Embed Video, Enquiry Button -->
+			<div class="col-md-6 col-sm-6 col-12 mt-5">
+				<div class="embed-responsive embed-responsive-16by9 text-center mt-3 mb-3">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/50-J-vO7Wj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class ="col-md-12 col-sm-12  col-12  d-flex flex-column">
+					<input id = "enquiryButton" class="btn-sm bg-dark text-light mt-auto" type="submit" value="Make an Enquiry">
+				</div>
+			</div>
+
+
+			<!-- Enquiry Form -->
+			<div id="enquiryAccordion" class="accordion-item mt-2 mb-3" style="background-color:#eeeeee">
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						<h5>Enquiry Form</h5>
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFeaturedNewCars">
+					<div class="accordion-body">
+						<div class="row">
+							<div class="form-group">
+								<label>Your Full Name</label>
+								<input id="applicantName" class="form-control" name="full-name" type="text">
+							</div>
+							<div class="form-group">
+								<label>Enter your email:</label>
+								<span class="required">* </span><span class="fa fa-info-circle"
+								data-toggle="tooltip"
+								data-placement="top"
+								title="Please enter a valid email address.">
+							</span>
+							<input type="email" name ="email-1" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Re-enter your email:</label>
+							<span class="required">* </span><span class="fa fa-info-circle"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="Please enter a valid email address.">
+						</span>
+						<input type="email" name ="email-2" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Contact Number</label>
+						<input type="tel" name ="contact-number" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Additional Information</label>
+						<span class="small">(Do not enter credit card information!)</span>
+						<textarea rows="3" name="details" class="form-control"></textarea>
+					</div>
+					<div class = "text-center">
+						<input id = "submit" class="btn-sm bg-dark text-light mt-3" type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<div class="footer">
+		<footer class="bg-dark text-center text-lg-start">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="list-inline flat-list text-center">
+						<li class="list-inline-item"><a href="index.html">Home</a></li>
+						<li class="list-inline-item"><a href="car_details.html">Car Details</a></li>
+						<li class="list-inline-item"><a href="about_us.html">About Us</a></li>
+						<li class="list-inline-item"><a href="#">Help</a></li>
+
+					</ul>
+					<div class="footer-id">
+						<ul class="list-inline flat-list text-center">
+							<li class="list-inline-item">Nicholas McGuffin</li>
+							<li class="list-inline-item">S12115435</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
+
+<script>
+
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+	$('#enquiryButton').click(function () {
+		$("#collapseOne").slideToggle(800);
+	});
+
+	$('#submit').click(function () {
+		$("#enquiryAccordion").fadeOut(1800);
+	});
+
+	$('#submit').click(function () {
+		$("#enquiryButton").fadeOut(1800);
+	});
+
+	$('#headingOne').click(function() {
+		$("#collapseOne").slideToggle(800);
+	});
+
+
+	$(document).ready(function() {
+		$("#submit").click(function(){
+			alert("Thanks " + $("#applicantName").val() + ", we will be in contact shortly!");
+		});
+	});
+
+</script>
